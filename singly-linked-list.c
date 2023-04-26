@@ -206,6 +206,9 @@ int insertFirst(headNode* h, int key) {	//인수를 넘겨받은 후, key값을 
 
 	listNode* node = (listNode*)malloc(sizeof(listNode));
 	node->key = key;
+	
+	node->link = NULL;
+	//오류 존재, link필드에 NULL값 대입 필요
 
 	//아래는 리스트의 첫번째 위치에 노드를 삽입하는 로직이다.
 	node->link = h->first;	
