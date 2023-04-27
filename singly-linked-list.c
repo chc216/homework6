@@ -39,6 +39,7 @@ void printList(headNode* h);
 
 int main()
 {
+	printf("[----- [최 현 철]	[2022078014] -----]\n");
 	char command;
 	int key;
 	headNode* headnode=NULL;
@@ -206,7 +207,7 @@ int insertFirst(headNode* h, int key) {	//인수를 넘겨받은 후, key값을 
 
 	listNode* node = (listNode*)malloc(sizeof(listNode));
 	node->key = key;
-	
+
 	node->link = NULL;
 	//오류 존재, link필드에 NULL값 대입 필요
 
